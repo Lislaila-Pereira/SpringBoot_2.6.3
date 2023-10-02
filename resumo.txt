@@ -1,0 +1,2 @@
+1. Para executar o servidor
+-- executar a funcao main e abrir o localhost:8080 em um navegador
