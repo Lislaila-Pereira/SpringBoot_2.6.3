@@ -2,7 +2,11 @@ package br.com.projeto.api.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import br.com.projeto.api.model.Pessoa;
 
 @RestController //classe responsavel pelas rotas
 public class Controller {
@@ -23,4 +27,10 @@ public class Controller {
         return "Seja bem vindo(a) " + nome + "!!";
     }
 
+    @PostMapping("/pessoa") //nao pode usar o GetMapping com o @RequestBody
+    public Pessoa pessoa(@RequestBody Pessoa p){
+        //para ver no terminal os valores da solicitacao post
+        System.out.println("Nome: " + p.getNome() );System.out.println("Idade: " + p.getIdade());
+        return p;
+    }
 }

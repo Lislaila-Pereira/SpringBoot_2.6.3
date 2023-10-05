@@ -7,3 +7,7 @@ Conceitos
 @GetMapping(""): Esta anotação mapeia um método para responder a solicitações HTTP GET na raiz do aplicativo. O parâmetro vazio "" indica que este método deve responder a solicitações na raiz do aplicativo, ou seja, quando você acessa a URL principal do aplicativo, ele executará o método dessa anotação
 
 @PathVariable é usada em aplicativos Spring para extrair valores de variáveis de caminho (path variables) de uma URL e passá-los como parâmetros para métodos de controlador.
+
+@RequestBody é usada para indicar que um parâmetro de método de um controlador deve ser vinculado ao corpo (body) de uma solicitação HTTP.
+
+@PostMapping é uma anotação que é usada para mapear um método de controle (controller method) para lidar com solicitações HTTP do tipo POST. Essa anotação indica que o método deve ser executado quando uma solicitação POST é feita para a URL especificada.
